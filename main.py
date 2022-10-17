@@ -5,12 +5,14 @@ numbers = [     [10, 11, 12, 13, 14],
 # numbers =[] 
 # rnum = int(input('Enter the number of rows'))
 # for i in range(rnum):
-# 	row = list(map(int, input('Enter 5 values for a row: ').split()))
+#values for a row: ').split()))
 # 	numbers.append(row)
-
+ryum=len(numbers[0])
 rnum = len(numbers)
-cnum = len(numbers[0])
-
-# ******************************
-# Make your Code
-# ******************************
+for i in range(rnum):
+    sum=0;
+    for j in range(ryum):
+        sum+=numbers[i][j];
+    print(f'The sum of row {i}={sum}');
+    
+# *****************************
